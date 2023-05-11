@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="project10.css">
+    <title>Visiting Card Scanner</title>
+    <style>
+      /* Add some basic styling to the webpage */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+      h1 {
+        text-align: center;
+      }
+      #image-preview {
+        display: none;
+        margin: 10px auto;
+        max-width: 100%;
+      }
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 12px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      .button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Visiting Card Scanner</h1>
+    <form id="upload-form">
+      <input type="file" id="image-upload" accept="image/*">
+      <button type="submit" class="button">Scan Visiting Card</button>
+    </form>
+    <img id="image-preview">
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
